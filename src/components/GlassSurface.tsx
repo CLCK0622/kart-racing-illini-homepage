@@ -95,6 +95,11 @@ const GlassSurface: React.FC<GlassSurfaceProps> = ({
   const gaussianBlurRef = useRef<SVGFEGaussianBlurElement>(null);
 
   const isDarkMode = useDarkMode();
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   const generateDisplacementMap = () => {
     const rect = containerRef.current?.getBoundingClientRect();
@@ -223,8 +228,20 @@ const GlassSurface: React.FC<GlassSurfaceProps> = ({
       '--glass-saturation': saturation
     } as React.CSSProperties;
 
+    if (!isMounted) {
+      // 这里直接返回深色模式下的默认兜底样式 (或者你喜欢的默认样)
+      return {
+        ...baseStyles,
+        background: 'rgba(255, 255, 255, 0.05)', // 给一个很淡的背景
+        border: '1px solid rgba(255, 255, 255, 0.1)',
+        backdropFilter: 'blur(10px)', // 使用原生 CSS 模糊作为兜底
+        WebkitBackdropFilter: 'blur(10px)',
+      };
+    }
+
     const svgSupported = supportsSVGFilters();
     const backdropFilterSupported = supportsBackdropFilter();
+    console.log("svg", svgSupported, "backdrop", backdropFilterSupported);
 
     if (svgSupported) {
       return {
