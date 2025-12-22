@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-/* ===== Theme tokens (替代 tailwind.config.ts) ===== */
 @theme {
   /* Colors */
   --color-illini-dark: #1c1c1e;
