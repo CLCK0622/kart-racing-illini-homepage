@@ -2,6 +2,7 @@ import GlassSurface from "@/components/GlassSurface";
 import Image from "next/image";
 import {FaArrowRight, FaBars, FaInstagram, FaDiscord} from "react-icons/fa";
 import ChromaGrid from "@/components/ChromaGrid";
+import CardSwap, {Card} from "@/components/CardSwap";
 
 const stats = [
     {title: "Next Race", subtitle: "Chambana GP, Oct 24", id: 1},
@@ -136,7 +137,7 @@ export default function Home() {
             </section>
 
             <section
-                className="w-full px-6 md:px-12 mb-16 z-20">
+                className="w-full px-6 md:px-12 mb-12 z-20">
 
                 <div className="text-gray-400 text-sm font-semibold mb-6">The Season It All Began</div>
                 <section
@@ -160,38 +161,38 @@ export default function Home() {
                 </section>
             </section>
 
-            <section className="mx-auto relative mb-12 font-cards max-w-7xl">
-                <ChromaGrid items={cars} />
+            <section className="mx-auto px-6 md:px-12 relative mb-12 w-full">
+                <div className="border-b border-white/10 mx-auto pb-12">
+                    <ChromaGrid items={cars} className="mx-auto max-w-7xl" />
+                </div>
             </section>
 
-            <section className="w-full px-6 md:px-12 pb-24 z-20 relative">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
-                    {cards.map((card) => (
-                        <div key={card.id} className="flex flex-col">
-                            <div
-                                className="relative w-full aspect-[4/3] mb-8 overflow-hidden rounded-sm bg-illini-gray/20">
-                                <Image
-                                    src={card.img}
-                                    alt={card.title}
-                                    fill
-                                    className="object-cover hover:scale-105 transition-transform duration-500"
-                                />
-                            </div>
-
-                            <div className="flex flex-col -mt-13 md:-mt-14 z-20 px-4">
-                                <h3 className="text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
-                                    {card.title.split(' ').map((word, i, arr) => (
-                                        <span key={i}>
-                                            {word} {i < arr.length - 1 && i == 1 ? <br/> : ' '}
-                                        </span>
-                                    ))}
-                                </h3>
-                                <p className="text-gray-400 text-sm leading-relaxed pr-4">
-                                    {card.desc}
-                                </p>
-                            </div>
-                        </div>
-                    ))}
+            <section className="w-full px-6 md:px-12 pb-36 z-20 relative overflow-y-hidden">
+                <div className="relative h-150 mx-24 flex flex-row items-center">
+                    <div className="w-full flex-8 mx-auto text-center pr-120 text-2xl">
+                        <span className="font-semibold text-4xl">Tracks</span> we have raced on:
+                    </div>
+                    <div className="flex-4 translate-y-48 -translate-x-60">
+                    <CardSwap
+                        cardDistance={60}
+                        verticalDistance={70}
+                        delay={5000}
+                        pauseOnHover={false}
+                    >
+                        <Card>
+                            <h3>Card 1</h3>
+                            <p>Your content here</p>
+                        </Card>
+                        <Card>
+                            <h3>Card 2</h3>
+                            <p>Your content here</p>
+                        </Card>
+                        <Card>
+                            <h3>Card 3</h3>
+                            <p>Your content here</p>
+                        </Card>
+                    </CardSwap>
+                    </div>
                 </div>
             </section>
         </main>
