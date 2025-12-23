@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Navbar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
     title: "Kart Racing Illini",
@@ -19,7 +21,9 @@ export default function RootLayout({
             </style>
         </head>
         <body className={`bg-illini-dark text-white font-sans antialiased`}>
+        <Navbar />
         {children}
+        <Footer />
         </body>
         </html>
     );

@@ -1,6 +1,7 @@
 import GlassSurface from "@/components/GlassSurface";
 import Image from "next/image";
 import {FaArrowRight, FaBars, FaInstagram, FaDiscord} from "react-icons/fa";
+import ChromaGrid from "@/components/ChromaGrid";
 
 const stats = [
     {title: "Next Race", subtitle: "Chambana GP, Oct 24", id: 1},
@@ -30,6 +31,63 @@ const cards = [
     },
 ];
 
+const cars = [
+    {
+        image: "/cars/Kart Republic + IAME Ka100 (rank 1).jpg",
+        title: "Kart Republic",
+        subtitle: "IAME Ka100",
+        handle: "Rank 1",
+        borderColor: "#F97316", // KR Orange
+        gradient: "linear-gradient(180deg, #F97316, #000)",
+        url: "#"
+    },
+    {
+        image: "/cars/Kart Republic + Briggs Lo206 (rank 3).jpg",
+        title: "Kart Republic",
+        subtitle: "Briggs Lo206",
+        handle: "Rank 3",
+        borderColor: "#F97316", // KR Orange
+        gradient: "linear-gradient(180deg, #F97316, #000)",
+        url: "#"
+    },
+    {
+        image: "/cars/Kosmic + Briggs Lo206 (rank 4).JPG",
+        title: "Kosmic",
+        subtitle: "Briggs Lo206",
+        handle: "Rank 4",
+        borderColor: "#8B5CF6", // Kosmic Purple/Blue
+        gradient: "linear-gradient(180deg, #8B5CF6, #000)",
+        url: "#"
+    },
+    {
+        image: "/cars/Tony Kart + Briggs Lo206 (rank 5).JPG",
+        title: "Tony Kart",
+        subtitle: "Briggs Lo206",
+        handle: "Rank 5",
+        borderColor: "#15803D", // Tony Kart Green
+        gradient: "linear-gradient(180deg, #15803D, #000)",
+        url: "#"
+    },
+    {
+        image: "/cars/DAP + ROK SV (rank 6).JPG",
+        title: "DAP",
+        subtitle: "ROK SV",
+        handle: "Rank 6",
+        borderColor: "#DC2626", // Historic DAP Red
+        gradient: "linear-gradient(180deg, #DC2626, #000)",
+        url: "#"
+    },
+    {
+        image: "/cars/Tony Kart + Rotax DD2 (rank 7).jpg",
+        title: "Tony Kart",
+        subtitle: "Rotax DD2",
+        handle: "Rank 7",
+        borderColor: "#15803D", // Tony Kart Green
+        gradient: "linear-gradient(180deg, #15803D, #000)",
+        url: "#"
+    }
+];
+
 export default function Home() {
     return (
         <main
@@ -37,48 +95,10 @@ export default function Home() {
 
             <div className="fixed inset-0 z-0 pointer-events-none bg-noise opacity-50 mix-blend-overlay"></div>
 
-            <div className="fixed top-6 left-0 w-full flex justify-center z-50 px-4">
-                <GlassSurface
-                    width="100%"
-                    height={60}
-                    borderRadius={40}
-                    opacity={0.6}
-                    backgroundOpacity={0.1}
-                    displace={5}
-                    className="max-w-7xl mx-auto"
-                    mixBlendMode="screen"
-                >
-                    <nav className="w-full flex justify-between items-center px-6 md:px-12 h-full">
-                        <div className="text-sm font-bold tracking-widest uppercase text-white drop-shadow-md">
-                            Kart Racing Illini
-                        </div>
-
-                        <div className="hidden md:flex gap-8 text-xs font-semibold tracking-widest text-gray-200">
-                            <a href="#" className="hover:text-illini-accent transition-colors drop-shadow-sm">TEAM</a>
-                            <a href="#"
-                               className="hover:text-illini-accent transition-colors drop-shadow-sm">CIRCUITS</a>
-                            <a href="#" className="hover:text-illini-accent transition-colors drop-shadow-sm">MERCH</a>
-                            <a href="#" className="hover:text-illini-accent transition-colors drop-shadow-sm">JOIN
-                                US</a>
-                        </div>
-
-                        <div className="flex items-center gap-4">
-                            <div className="hidden md:block">
-                                <button
-                                    className="w-full h-full text-xs font-bold uppercase hover:text-illini-accent transition-colors">
-                                    Contact Us
-                                </button>
-                            </div>
-                            <FaBars className="md:hidden text-xl"/>
-                        </div>
-                    </nav>
-                </GlassSurface>
-            </div>
-
             <section className="relative w-full pb-16 pt-32 md:pb-24 px-6 md:px-12 flex flex-col items-center text-center z-10">
                 <div className="relative z-10 flex flex-col items-center">
                     <h1 className="text-3xl md:text-7xl font-bold leading-tight tracking-tight text-white mb-2 drop-shadow-2xl">
-                        Adrenaline Lives On <br /> Through Speed
+                        Defying Limits,<br />One Lap at a Time.
                     </h1>
                     <div className="relative w-full flex justify-center items-center mt-2 md:-mt-8 mb-8 md:mb-10">
             <span className="font-signature text-illini-accent text-5xl md:text-6xl md:text-[9rem] transform z-20 whitespace-nowrap drop-shadow-lg">
@@ -118,7 +138,7 @@ export default function Home() {
             <section
                 className="w-full px-6 md:px-12 mb-16 z-20">
 
-                <div className="text-gray-400 text-sm font-semibold mb-6">A Season We&#39;ll Never Forget</div>
+                <div className="text-gray-400 text-sm font-semibold mb-6">The Season It All Began</div>
                 <section
                     className="py-8 border-t border-white/10 border-b border-white/10 bg-illini-dark/50 backdrop-blur-sm">
                     <div
@@ -138,6 +158,10 @@ export default function Home() {
                         ))}
                     </div>
                 </section>
+            </section>
+
+            <section className="mx-auto relative mb-12 font-cards max-w-7xl">
+                <ChromaGrid items={cars} />
             </section>
 
             <section className="w-full px-6 md:px-12 pb-24 z-20 relative">
@@ -170,16 +194,6 @@ export default function Home() {
                     ))}
                 </div>
             </section>
-
-            <footer
-                className="w-full py-8 px-6 md:px-12 border-t border-white/10 flex justify-between items-center text-gray-500 text-xs z-20 relative">
-                <p>&copy; {new Date().getFullYear()} Kart Racing Illini. All rights reserved.</p>
-                <div className="flex gap-4 text-lg">
-                    <FaInstagram className="hover:text-white cursor-pointer transition-colors"/>
-                    <FaDiscord className="hover:text-white cursor-pointer transition-colors"/>
-                </div>
-            </footer>
-
         </main>
     );
 }
