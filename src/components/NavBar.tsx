@@ -22,11 +22,11 @@ const Navbar = () => {
                     </div>
 
                     {/* Desktop Links */}
-                    <div className="hidden md:flex gap-8 text-xs font-semibold tracking-widest text-gray-200">
-                        <a href="#" className="hover:text-illini-accent transition-colors drop-shadow-sm">TEAM</a>
-                        <a href="#" className="hover:text-illini-accent transition-colors drop-shadow-sm">CIRCUITS</a>
-                        <a href="#" className="hover:text-illini-accent transition-colors drop-shadow-sm">MERCH</a>
-                        <a href="#" className="hover:text-illini-accent transition-colors drop-shadow-sm">CONTACT US</a>
+                    <div className="hidden md:flex gap-12 text-xs font-semibold tracking-widest text-gray-200">
+                        <a href="/team" className="hover:text-illini-accent transition-colors drop-shadow-sm">TEAM</a>
+                        <a href="#" className="hover:text-illini-accent transition-colors drop-shadow-sm">RACES</a>
+                        {/*<a href="#" className="hover:text-illini-accent transition-colors drop-shadow-sm">MERCH</a>*/}
+                        <a href="/contact" className="hover:text-illini-accent transition-colors drop-shadow-sm">CONTACT US</a>
                     </div>
 
                     {/* Right Actions */}
