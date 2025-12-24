@@ -172,26 +172,157 @@ export default function Home() {
                     <div className="w-full flex-8 mx-auto text-center pr-120 text-2xl">
                         <span className="font-bold text-5xl">Tracks</span> we have raced on:
                     </div>
-                    <div className="flex-4 translate-y-48 -translate-x-60">
-                    <CardSwap
-                        cardDistance={60}
-                        verticalDistance={70}
-                        delay={5000}
-                        pauseOnHover={false}
-                    >
-                        <Card>
-                            <h3>Card 1</h3>
-                            <p>Your content here</p>
-                        </Card>
-                        <Card>
-                            <h3>Card 2</h3>
-                            <p>Your content here</p>
-                        </Card>
-                        <Card>
-                            <h3>Card 3</h3>
-                            <p>Your content here</p>
-                        </Card>
-                    </CardSwap>
+                    <div className="flex-4 translate-y-64 -translate-x-60">
+                        <CardSwap
+                            cardDistance={60}
+                            verticalDistance={70}
+                            delay={4000}
+                            pauseOnHover={false}
+                        >
+                            <Card>
+                                <div className="flex flex-col h-full w-full p-6 items-center justify-between">
+                                    <h3 className="text-2xl font-bold text-white tracking-wider uppercase text-center">
+                                        Autobahn Kart Circuit
+                                    </h3>
+                                    <div className="w-full h-[1px] bg-white/20 my-4" />
+                                    <div className="relative w-full h-full min-h-0">
+                                        <Image
+                                            src="/tracks/AutobahnKartCircuit.webp"
+                                            alt="Autobahn Kart Circuit"
+                                            fill
+                                            className="object-contain drop-shadow-lg"
+                                            sizes="(max-width: 768px) 100vw, 33vw"
+                                        />
+                                    </div>
+                                </div>
+                            </Card>
+
+                            <Card>
+                                <div className="flex flex-col h-full w-full p-6 items-center justify-between">
+                                    <h3 className="text-2xl font-bold text-white tracking-wider uppercase text-center">
+                                        New Castle Motorsports Park
+                                    </h3>
+                                    <div className="w-full h-[1px] bg-white/20 my-4" />
+                                    <div className="relative w-full h-full min-h-0">
+                                        <Image
+                                            src="/tracks/NewCastleMotorsportsPark.webp"
+                                            alt="New Castle Motorsports Park"
+                                            fill
+                                            className="object-contain drop-shadow-lg"
+                                            sizes="(max-width: 768px) 100vw, 33vw"
+                                        />
+                                    </div>
+                                </div>
+                            </Card>
+
+                            <Card>
+                                <div className="flex flex-col h-full w-full p-6 items-center justify-between">
+                                    <h3 className="text-2xl font-bold text-white tracking-wider uppercase text-center">
+                                        Gateway Kartplex
+                                    </h3>
+                                    <div className="w-full h-[1px] bg-white/20 my-4" />
+                                    <div className="relative w-full h-full min-h-0">
+                                        <Image
+                                            src="/tracks/GatewayKartplex.png"
+                                            alt="Gateway Kartplex"
+                                            fill
+                                            className="object-contain drop-shadow-lg"
+                                            sizes="(max-width: 768px) 100vw, 33vw"
+                                        />
+                                    </div>
+                                </div>
+                            </Card>
+
+                            <Card>
+                                <div className="flex flex-col h-full w-full p-6 items-center justify-between">
+                                    <h3 className="text-2xl font-bold text-white tracking-wider uppercase text-center">
+                                        Mid-State Kart Club
+                                    </h3>
+                                    <div className="w-full h-[1px] bg-white/20 my-4" />
+                                    <div className="relative w-full h-full min-h-0">
+                                        <Image
+                                            src="/tracks/MidStateKartClub.webp"
+                                            alt="Mid-State Kart Club"
+                                            fill
+                                            className="object-contain drop-shadow-lg"
+                                            sizes="(max-width: 768px) 100vw, 33vw"
+                                        />
+                                    </div>
+                                </div>
+                            </Card>
+
+                            <Card>
+                                <div className="flex flex-col h-full w-full p-6 items-center justify-between">
+                                    <h3 className="text-2xl font-bold text-white tracking-wider uppercase text-center">
+                                        K1 Circuit Whiteland
+                                    </h3>
+                                    <div className="w-full h-[1px] bg-white/20 my-4" />
+                                    <div className="relative w-full h-full min-h-0">
+                                        <Image
+                                            src="/tracks/K1_whiteland.webp"
+                                            alt="K1 Circuit Whiteland"
+                                            fill
+                                            className="object-contain drop-shadow-lg"
+                                            sizes="(max-width: 768px) 100vw, 33vw"
+                                        />
+                                    </div>
+                                </div>
+                            </Card>
+
+                            <Card>
+                                <div className="flex flex-col h-full w-full p-6 items-center justify-between">
+                                    <h3 className="text-2xl font-bold text-white tracking-wider uppercase text-center">
+                                        Norway Motorsports Park
+                                    </h3>
+                                    <div className="w-full h-[1px] bg-white/20 my-4" />
+                                    <div className="relative w-full h-full min-h-0">
+                                        <Image
+                                            src="/tracks/NorwayMotorsports.png"
+                                            alt="Norway Motorsports Park"
+                                            fill
+                                            className="object-contain drop-shadow-lg"
+                                            sizes="(max-width: 768px) 100vw, 33vw"
+                                        />
+                                    </div>
+                                </div>
+                            </Card>
+
+                            <Card>
+                                <div className="flex flex-col h-full w-full p-6 items-center justify-between">
+                                    <h3 className="text-2xl font-bold text-white tracking-wider uppercase text-center">
+                                        Southern Illinois Kart Circuit
+                                    </h3>
+                                    <div className="w-full h-[1px] bg-white/20 my-4" />
+                                    <div className="relative w-full h-full min-h-0">
+                                        <Image
+                                            src="/tracks/SIKC.png"
+                                            alt="SIKC"
+                                            fill
+                                            className="object-contain drop-shadow-lg"
+                                            sizes="(max-width: 768px) 100vw, 33vw"
+                                        />
+                                    </div>
+                                </div>
+                            </Card>
+
+                            <Card>
+                                <div className="flex flex-col h-full w-full p-6 items-center justify-between">
+                                    <h3 className="text-2xl font-bold text-white tracking-wider uppercase text-center">
+                                        KF1 Karting Circuit
+                                    </h3>
+                                    <div className="w-full h-[1px] bg-white/20 my-4" />
+                                    <div className="relative w-full h-full min-h-0">
+                                        <Image
+                                            src="/tracks/KF1.webp"
+                                            alt="KF1"
+                                            fill
+                                            className="object-contain drop-shadow-lg"
+                                            sizes="(max-width: 768px) 100vw, 33vw"
+                                        />
+                                    </div>
+                                </div>
+                            </Card>
+                        </CardSwap>
                     </div>
                 </div>
             </section>
