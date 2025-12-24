@@ -34,7 +34,7 @@ const cards = [
 
 const cars = [
     {
-        image: "/cars/Kart Republic + IAME Ka100 (rank 1).jpg",
+        image: "/cars/KartRepublic+IAMEKa100(rank1).jpg",
         title: "Kart Republic",
         subtitle: "IAME Ka100",
         handle: "Rank 1",
@@ -43,7 +43,7 @@ const cars = [
         url: "#"
     },
     {
-        image: "/cars/Kart Republic + Briggs Lo206 (rank 3).jpg",
+        image: "/cars/KartRepublic+BriggsLo206(rank3).jpg",
         title: "Kart Republic",
         subtitle: "Briggs Lo206",
         handle: "Rank 3",
@@ -52,7 +52,7 @@ const cars = [
         url: "#"
     },
     {
-        image: "/cars/Kosmic + Briggs Lo206 (rank 4).JPG",
+        image: "/cars/Kosmic+BriggsLo206(rank4).JPG",
         title: "Kosmic",
         subtitle: "Briggs Lo206",
         handle: "Rank 4",
@@ -61,7 +61,7 @@ const cars = [
         url: "#"
     },
     {
-        image: "/cars/Tony Kart + Briggs Lo206 (rank 5).JPG",
+        image: "/cars/TonyKart+BriggsLo206(rank5).JPG",
         title: "Tony Kart",
         subtitle: "Briggs Lo206",
         handle: "Rank 5",
@@ -70,7 +70,7 @@ const cars = [
         url: "#"
     },
     {
-        image: "/cars/DAP + ROK SV (rank 6).JPG",
+        image: "/cars/DAP+ROKSV(rank6).JPG",
         title: "DAP",
         subtitle: "ROK SV",
         handle: "Rank 6",
@@ -79,7 +79,7 @@ const cars = [
         url: "#"
     },
     {
-        image: "/cars/Tony Kart + Rotax DD2 (rank 7).jpg",
+        image: "/cars/TonyKart+RotaxDD2(rank7).jpg",
         title: "Tony Kart",
         subtitle: "Rotax DD2",
         handle: "Rank 7",
@@ -170,7 +170,7 @@ export default function Home() {
             <section className="w-full px-6 md:px-12 pb-36 z-20 relative overflow-y-hidden">
                 <div className="relative h-150 mx-24 flex flex-row items-center">
                     <div className="w-full flex-8 mx-auto text-center pr-120 text-2xl">
-                        <span className="font-semibold text-4xl">Tracks</span> we have raced on:
+                        <span className="font-bold text-5xl">Tracks</span> we have raced on:
                     </div>
                     <div className="flex-4 translate-y-48 -translate-x-60">
                     <CardSwap
