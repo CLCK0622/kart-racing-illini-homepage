@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import GlassSurface from "@/components/GlassSurface";
 import { FaPaperPlane, FaEnvelope, FaMapMarkerAlt, FaDiscord, FaInstagram } from "react-icons/fa";
+import Link from "next/dist/client/link";
 
 export default function ContactPage() {
     const [formData, setFormData] = useState({
@@ -86,7 +87,7 @@ ${formData.message}
 
                         <div className="pt-8 border-t border-white/10 flex gap-6">
                             <FaInstagram className="text-2xl text-gray-400 hover:text-white transition-colors cursor-pointer" />
-                            <FaDiscord className="text-2xl text-gray-400 hover:text-white transition-colors cursor-pointer" />
+                            <Link href="https://discord.gg/scUcuYev"><FaDiscord className="text-2xl text-gray-400 hover:text-white transition-colors cursor-pointer" /></Link>
                         </div>
                     </div>
 
@@ -101,7 +102,6 @@ ${formData.message}
                     >
                         <form onSubmit={handleSubmit} className="w-full p-8 md:p-10 flex flex-col gap-6">
                             <h2 className="text-2xl font-bold uppercase tracking-wider mb-2">Send a Message</h2>
-
                             <div className="flex flex-col gap-2">
                                 <label htmlFor="name" className="text-xs font-bold uppercase tracking-widest text-gray-500">Full Name</label>
                                 <input
@@ -115,7 +115,6 @@ ${formData.message}
                                     className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder:text-gray-600 focus:outline-none focus:border-illini-accent/50 focus:bg-white/10 transition-all"
                                 />
                             </div>
-
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div className="flex flex-col gap-2">
                                     <label htmlFor="email" className="text-xs font-bold uppercase tracking-widest text-gray-500">Email</label>
@@ -143,7 +142,6 @@ ${formData.message}
                                     />
                                 </div>
                             </div>
-
                             <div className="flex flex-col gap-2">
                                 <label htmlFor="type" className="text-xs font-bold uppercase tracking-widest text-gray-500">Inquiry Type</label>
                                 <div className="relative">
@@ -161,7 +159,6 @@ ${formData.message}
                                     <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400 text-xs">▼</div>
                                 </div>
                             </div>
-
                             <div className="flex flex-col gap-2">
                                 <label htmlFor="message" className="text-xs font-bold uppercase tracking-widest text-gray-500">Message</label>
                                 <textarea
@@ -175,7 +172,6 @@ ${formData.message}
                                     className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder:text-gray-600 focus:outline-none focus:border-illini-accent/50 focus:bg-white/10 transition-all resize-none"
                                 />
                             </div>
-
                             <button
                                 type="submit"
                                 className="group mt-2 w-full bg-white text-black font-bold uppercase tracking-widest py-4 rounded-lg hover:bg-illini-accent transition-colors duration-300 flex items-center justify-center gap-2"
@@ -183,7 +179,6 @@ ${formData.message}
                                 Send Message
                                 <FaPaperPlane className="text-sm" />
                             </button>
-
                         </form>
                     </GlassSurface>
                 </div>

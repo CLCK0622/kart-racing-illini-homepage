@@ -3,12 +3,13 @@ import Image from "next/image";
 import {FaArrowRight, FaBars, FaInstagram, FaDiscord} from "react-icons/fa";
 import ChromaGrid from "@/components/ChromaGrid";
 import CardSwap, {Card} from "@/components/CardSwap";
+import Link from "next/dist/client/link";
 
 const stats = [
-    {title: "Next Race", subtitle: "Chambana GP, Oct 24", id: 1},
-    {title: "Join The Team", subtitle: "Recruitment Open", id: 2},
-    {title: "Club Ranking", subtitle: "Top 5 in Midwest", id: 3},
-    {title: "Weekly Meet", subtitle: "Thursdays 7PM", id: 4},
+    {title: "Next Race", subtitle: "SIKC Club Race | Dec 28", id: 1, href: "/races"},
+    {title: "Join The Team", subtitle: "Recruitment Open", id: 2, href: "/contact"},
+    {title: "Club Ranking", subtitle: "The Only Kart Racing Club at UIUC", id: 3, href: "/team"},
+    {title: "Weekly Meet", subtitle: "TBD", id: 4, href: "/contact"},
 ];
 
 const cards = [
@@ -34,28 +35,28 @@ const cards = [
 
 const cars = [
     {
-        image: "/cars/KartRepublic+IAMEKa100(rank1).jpg",
+        image: "/cars/KartRepublic+BriggsLo206(rank3).jpg",
         title: "Kart Republic",
         subtitle: "IAME Ka100",
-        handle: "Rank 1",
+        // handle: "Rank 3",
         borderColor: "#F97316", // KR Orange
         gradient: "linear-gradient(180deg, #F97316, #000)",
         url: "#"
     },
     {
-        image: "/cars/KartRepublic+BriggsLo206(rank3).jpg",
+        image: "/cars/KartRepublic+IAMEKa100(rank1).jpg",
         title: "Kart Republic",
         subtitle: "Briggs Lo206",
-        handle: "Rank 3",
+        // handle: "Rank 1",
         borderColor: "#F97316", // KR Orange
         gradient: "linear-gradient(180deg, #F97316, #000)",
         url: "#"
     },
     {
         image: "/cars/Kosmic+BriggsLo206(rank4).JPG",
-        title: "Kosmic",
+        title: "Kosmic (For Sale)",
         subtitle: "Briggs Lo206",
-        handle: "Rank 4",
+        // handle: "Rank 4",
         borderColor: "#8B5CF6", // Kosmic Purple/Blue
         gradient: "linear-gradient(180deg, #8B5CF6, #000)",
         url: "#"
@@ -64,7 +65,7 @@ const cars = [
         image: "/cars/TonyKart+BriggsLo206(rank5).JPG",
         title: "Tony Kart",
         subtitle: "Briggs Lo206",
-        handle: "Rank 5",
+        // handle: "Rank 5",
         borderColor: "#15803D", // Tony Kart Green
         gradient: "linear-gradient(180deg, #15803D, #000)",
         url: "#"
@@ -73,7 +74,7 @@ const cars = [
         image: "/cars/DAP+ROKSV(rank6).JPG",
         title: "DAP",
         subtitle: "ROK SV",
-        handle: "Rank 6",
+        // handle: "Rank 6",
         borderColor: "#DC2626", // Historic DAP Red
         gradient: "linear-gradient(180deg, #DC2626, #000)",
         url: "#"
@@ -82,7 +83,7 @@ const cars = [
         image: "/cars/TonyKart+RotaxDD2(rank7).jpg",
         title: "Tony Kart",
         subtitle: "Rotax DD2",
-        handle: "Rank 7",
+        // handle: "Rank 7",
         borderColor: "#15803D", // Tony Kart Green
         gradient: "linear-gradient(180deg, #15803D, #000)",
         url: "#"
@@ -145,7 +146,7 @@ export default function Home() {
                     <div
                         className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-0 divide-y md:divide-y-0 md:divide-x divide-white/10">
                         {stats.map((stat) => (
-                            <div key={stat.id}
+                            <Link key={stat.id} href={stat.href}
                                  className="group flex items-center justify-between md:block py-4 md:py-0 md:px-6 cursor-pointer first:pl-0">
                                 <div className="flex flex-col">
                                 <span
@@ -155,7 +156,7 @@ export default function Home() {
                                 </div>
                                 <FaArrowRight
                                     className="text-gray-600 group-hover:text-illini-accent transform -rotate-45 md:rotate-0 md:mt-4 transition-all"/>
-                            </div>
+                            </Link>
                         ))}
                     </div>
                 </section>
@@ -182,13 +183,13 @@ export default function Home() {
                             <Card>
                                 <div className="flex flex-col h-full w-full p-6 items-center justify-between">
                                     <h3 className="text-2xl font-bold text-white tracking-wider uppercase text-center">
-                                        Autobahn Kart Circuit
+                                        Kart Circuit Autobahn
                                     </h3>
                                     <div className="w-full h-[1px] bg-white/20 my-4" />
                                     <div className="relative w-full h-full min-h-0">
                                         <Image
-                                            src="/tracks/AutobahnKartCircuit.webp"
-                                            alt="Autobahn Kart Circuit"
+                                            src="/tracks/KartCircuitAutobahn.png"
+                                            alt="Kart Circuit Autobahn"
                                             fill
                                             className="object-contain drop-shadow-lg"
                                             sizes="(max-width: 768px) 100vw, 33vw"
@@ -290,7 +291,7 @@ export default function Home() {
                             <Card>
                                 <div className="flex flex-col h-full w-full p-6 items-center justify-between">
                                     <h3 className="text-2xl font-bold text-white tracking-wider uppercase text-center">
-                                        Southern Illinois Kart Circuit
+                                        Shanghai International Karting Circuit
                                     </h3>
                                     <div className="w-full h-[1px] bg-white/20 my-4" />
                                     <div className="relative w-full h-full min-h-0">

@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaBars } from 'react-icons/fa';
-import GlassSurface from './GlassSurface'; // 确保这里的引用路径正确
+import GlassSurface from './GlassSurface';
+import Link from "next/dist/client/link"; // 确保这里的引用路径正确
 
 const Navbar = () => {
     return (
@@ -17,16 +18,16 @@ const Navbar = () => {
             >
                 <nav className="w-full flex justify-between items-center px-6 md:px-12 h-full">
                     {/* Logo */}
-                    <div className="text-sm font-bold tracking-widest uppercase text-white drop-shadow-md">
+                    <Link href="/" className="text-sm font-bold tracking-widest uppercase text-white drop-shadow-md">
                         Kart Racing Illini
-                    </div>
+                    </Link>
 
                     {/* Desktop Links */}
                     <div className="hidden md:flex gap-12 text-xs font-semibold tracking-widest text-gray-200">
-                        <a href="/team" className="hover:text-illini-accent transition-colors drop-shadow-sm">TEAM</a>
-                        <a href="#" className="hover:text-illini-accent transition-colors drop-shadow-sm">RACES</a>
+                        <Link href="/team" className="hover:text-illini-accent transition-colors drop-shadow-sm">TEAM</Link>
+                        <Link href="/races" className="hover:text-illini-accent transition-colors drop-shadow-sm">RACES</Link>
                         {/*<a href="#" className="hover:text-illini-accent transition-colors drop-shadow-sm">MERCH</a>*/}
-                        <a href="/contact" className="hover:text-illini-accent transition-colors drop-shadow-sm">CONTACT US</a>
+                        <Link href="/contact" className="hover:text-illini-accent transition-colors drop-shadow-sm">CONTACT US</Link>
                     </div>
 
                     {/* Right Actions */}

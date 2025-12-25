@@ -50,7 +50,6 @@ const teamMembers: TeamMember[] = [
 const MemberCard = ({ member }: { member: TeamMember }) => (
     <div className="group relative w-full max-w-sm p-8 flex flex-col items-center bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl transition-colors duration-300 hover:border-white/20 hover:bg-white/10">
 
-        {/* Image Container */}
         <div className="relative w-32 h-32 md:w-40 md:h-40 mb-6 rounded-full overflow-hidden border-2 border-white/10 group-hover:border-illini-accent transition-colors duration-300 shadow-xl">
             <Image
                 src={member.image}
@@ -125,7 +124,6 @@ export default function TeamPage() {
                         </button>
                     </a>
                 </div>
-
             </div>
         </main>
     );
