@@ -14,41 +14,41 @@ interface RaceEvent {
     gapScale: number;
 }
 
-const races: RaceEvent[] = [
+const pastRaces: RaceEvent[] = [
     {
         id: 1,
-        name: "KRA #14",
-        date: "OCT 26, 2025",
-        location: "New Castle, IN",
-        rank: ["DNF (KA)", "P14 (206)"],
-        image: "/races/251026NCMP.jpg",
+        name: "KCA 4h Endurance",
+        date: "APR 27, 2025",
+        location: "Joliet, IL",
+        rank: "P3",
+        image: "/tracks/MidStateKartClub.webp",
         gapScale: 1
     },
     {
         id: 2,
-        name: "KRA #13",
-        date: "OCT 10, 2025",
-        location: "New Castle, IN",
-        rank: ["P13 (KA)", "P21 (206)"],
-        image: "/races/251012NCMP.jpg",
-        gapScale: 1
+        name: "MSKC #4",
+        date: "MAY 18, 2025",
+        location: "Dawson, IL",
+        rank: ["P1", "P3"],
+        image: "/races/250518MSKC.JPG",
+        gapScale: 2
     },
     {
         id: 3,
-        name: "MSKC #13",
-        date: "SEP 14, 2025",
-        location: "Dawson, IL",
-        rank: "P1",
-        image: "/races/250914MSKC.JPG",
-        gapScale: 1.5
+        name: "CRKC 8h Endurance",
+        date: "JUL 27, 2025",
+        location: "Shanghai, CN",
+        rank: "P31",
+        image: "/races/250727CRKC.JPG",
+        gapScale: 1
     },
     {
         id: 4,
-        name: "MSKC #11",
-        date: "SEP 07, 2025",
-        location: "Dawson, IL",
-        rank: "P2",
-        image: "/races/250907MSKC.JPG",
+        name: "SIRA #4",
+        date: "AUG 24, 2025",
+        location: "Yorktown, IN",
+        rank: "P1",
+        image: "/races/250824SIRA.JPG",
         gapScale: 0.5
     },
     {
@@ -62,39 +62,48 @@ const races: RaceEvent[] = [
     },
     {
         id: 6,
-        name: "SIRA #4",
-        date: "AUG 24, 2025",
-        location: "Yorktown, IN",
-        rank: "P1",
-        image: "/races/250824SIRA.JPG",
+        name: "MSKC #11",
+        date: "SEP 07, 2025",
+        location: "Dawson, IL",
+        rank: "P2",
+        image: "/races/250907MSKC.JPG",
         gapScale: 0.5
     },
     {
         id: 7,
-        name: "CRKC 8h Endurance",
-        date: "JUL 27, 2025",
-        location: "Shanghai, CN",
-        rank: "P31",
-        image: "/races/250727CRKC.JPG",
-        gapScale: 1
+        name: "MSKC #13",
+        date: "SEP 14, 2025",
+        location: "Dawson, IL",
+        rank: "P1",
+        image: "/races/250914MSKC.JPG",
+        gapScale: 1.5
     },
     {
         id: 8,
-        name: "MSKC #4",
-        date: "MAY 18, 2025",
-        location: "Dawson, IL",
-        rank: ["P1", "P3"],
-        image: "/races/250518MSKC.JPG",
-        gapScale: 2
+        name: "KRA #13",
+        date: "OCT 10, 2025",
+        location: "New Castle, IN",
+        rank: ["P13 (KA)", "P21 (206)"],
+        image: "/races/251012NCMP.jpg",
+        gapScale: 1
     },
     {
         id: 9,
-        name: "KCA 4h Endurance",
-        date: "APR 27, 2025",
-        location: "Joliet, IL",
-        rank: "P3",
-        image: "/tracks/MidStateKartClub.webp",
+        name: "KRA #14",
+        date: "OCT 26, 2025",
+        location: "New Castle, IN",
+        rank: ["DNF (KA)", "P14 (206)"],
+        image: "/races/251026NCMP.jpg",
         gapScale: 1
+    },
+    {
+        id: 10,
+        name: "SIKC #1", // 20251228 SIKC
+        date: "DEC 28, 2025",
+        location: "Shanghai, CN",
+        rank: "P6",
+        image: "/races/251228SIKC.jpg",
+        gapScale: 2
     }
 ];
 
@@ -106,8 +115,9 @@ const getRankStyle = (r: string) => {
 };
 
 export default function RacesPage() {
+    const races = [...pastRaces].reverse();
     return (
-        <main className="min-h-screen relative overflow-x-hidden selection:bg-illini-accent selection:text-black font-sans bg-illini-dark text-white flex flex-col">
+        <main className="min-h-screen relative overflow-x-hidden selection:bg-illini-accent selection:text-black font-sans text-white flex flex-col">
 
             <div className="fixed inset-0 z-0 pointer-events-none bg-noise opacity-50 mix-blend-overlay"></div>
             <div className="fixed top-[10%] left-[50%] -translate-x-1/2 w-[800px] h-[800px] bg-blue-900/10 rounded-full blur-[120px] pointer-events-none z-0"></div>

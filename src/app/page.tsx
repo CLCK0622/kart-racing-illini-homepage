@@ -6,9 +6,9 @@ import CardSwap, {Card} from "@/components/CardSwap";
 import Link from "next/dist/client/link";
 
 const stats = [
-    {title: "Next Race", subtitle: "SIKC Club Race | Dec 28", id: 1, href: "/races"},
+    {title: "Next Race", subtitle: "TBD", id: 1, href: "/races"},
     {title: "Join The Team", subtitle: "Recruitment Open", id: 2, href: "/contact"},
-    {title: "Club Ranking", subtitle: "The Only Kart Racing Club at UIUC", id: 3, href: "/team"},
+    {title: "About Us", subtitle: "The Only Kart Racing Club at UIUC", id: 3, href: "/team"},
     {title: "Weekly Meet", subtitle: "TBD", id: 4, href: "/contact"},
 ];
 
@@ -37,7 +37,7 @@ const cars = [
     {
         image: "/cars/KartRepublic+BriggsLo206(rank3).jpg",
         title: "Kart Republic",
-        subtitle: "IAME Ka100",
+        subtitle: "IAME Ka100 / Briggs Lo206",
         // handle: "Rank 3",
         borderColor: "#F97316", // KR Orange
         gradient: "linear-gradient(180deg, #F97316, #000)",
@@ -45,8 +45,8 @@ const cars = [
     },
     {
         image: "/cars/KartRepublic+IAMEKa100(rank1).jpg",
-        title: "Kart Republic",
-        subtitle: "Briggs Lo206",
+        title: "DAP",
+        subtitle: "IAME Ka100 / Briggs Lo206",
         // handle: "Rank 1",
         borderColor: "#F97316", // KR Orange
         gradient: "linear-gradient(180deg, #F97316, #000)",
@@ -72,7 +72,7 @@ const cars = [
     },
     {
         image: "/cars/DAP+ROKSV(rank6).JPG",
-        title: "DAP",
+        title: "FA Kart",
         subtitle: "ROK SV",
         // handle: "Rank 6",
         borderColor: "#DC2626", // Historic DAP Red
@@ -124,17 +124,22 @@ export default function Home() {
                     </GlassSurface>
                 </div>
 
-                <div className="relative w-full max-w-4xl mt-12 md:-mt-88 -z-10 pointer-events-none">
-                    <div className="relative">
-                        <Image
-                            src="https://images.unsplash.com/photo-1652451991281-e637ec408bec?q=80&w=2533&auto=format&fit=crop"
-                            alt="Go Kart on track"
-                            width={1200}
-                            height={800}
-                            className="w-full h-auto object-cover"
-                        />
+                    <div className="relative w-full max-w-4xl mt-12 md:-mt-88 -z-10 pointer-events-none">
+
+                        <video
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            className="w-full h-auto object-cover opacity-80"
+                        >
+                            <source src="/WebCover.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+
+                        <div className="absolute inset-0 bg-linear-to-t from-illini-dark via-transparent to-transparent"></div>
+
                     </div>
-                </div>
             </section>
 
             <section

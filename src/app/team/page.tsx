@@ -86,7 +86,7 @@ export default function TeamPage() {
     const directors = teamMembers.slice(2);
 
     return (
-        <main className="min-h-screen relative overflow-x-hidden selection:bg-illini-accent selection:text-black font-sans bg-illini-dark text-white flex flex-col">
+        <main className="min-h-screen relative overflow-x-hidden selection:bg-illini-accent selection:text-black font-sans text-white flex flex-col">
 
             <div className="fixed inset-0 z-0 pointer-events-none bg-noise opacity-50 mix-blend-overlay"></div>
             <div className="fixed top-[-20%] left-[20%] w-[600px] h-[600px] bg-blue-900/10 rounded-full blur-[140px] pointer-events-none z-0"></div>
@@ -117,7 +117,7 @@ export default function TeamPage() {
                 </div>
 
                 <div className="mt-20 text-center">
-                    <p className="text-gray-500 text-sm uppercase tracking-widest mb-6">Want to be on this list?</p>
+                    <p className="text-white text-sm uppercase tracking-widest mb-6">Want to be on this list?</p>
                     <a href="/contact">
                         <button className="px-8 py-3 rounded-full border border-white/20 text-white font-bold text-sm uppercase hover:bg-white hover:text-black hover:scale-105 transition-all duration-300">
                             Join The Team

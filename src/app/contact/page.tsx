@@ -42,7 +42,7 @@ ${formData.message}
     };
 
     return (
-        <main className="min-h-screen relative overflow-x-hidden selection:bg-illini-accent selection:text-black font-sans bg-illini-dark text-white flex flex-col">
+        <main className="min-h-screen relative overflow-x-hidden selection:bg-illini-accent selection:text-black font-sans text-white flex flex-col">
 
             <div className="fixed inset-0 z-0 pointer-events-none bg-noise opacity-50 mix-blend-overlay"></div>
             <div className="fixed top-[-10%] left-[-10%] w-[500px] h-[500px] bg-blue-900/20 rounded-full blur-[120px] pointer-events-none z-0"></div>
@@ -94,8 +94,8 @@ ${formData.message}
                     <GlassSurface
                         width="100%"
                         borderRadius={24}
-                        opacity={0.6}
-                        backgroundOpacity={0.05}
+                        opacity={0.9}
+                        backgroundOpacity={0.15}
                         borderWidth={1}
                         height="auto"
                         className="w-full"
@@ -103,7 +103,7 @@ ${formData.message}
                         <form onSubmit={handleSubmit} className="w-full p-8 md:p-10 flex flex-col gap-6">
                             <h2 className="text-2xl font-bold uppercase tracking-wider mb-2">Send a Message</h2>
                             <div className="flex flex-col gap-2">
-                                <label htmlFor="name" className="text-xs font-bold uppercase tracking-widest text-gray-500">Full Name</label>
+                                <label htmlFor="name" className="text-xs font-bold uppercase tracking-widest text-white">Full Name</label>
                                 <input
                                     type="text"
                                     id="name"
@@ -112,12 +112,12 @@ ${formData.message}
                                     value={formData.name}
                                     onChange={handleChange}
                                     placeholder="Lando Norris"
-                                    className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder:text-gray-600 focus:outline-none focus:border-illini-accent/50 focus:bg-white/10 transition-all"
+                                    className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder:text-white/80 focus:outline-none focus:border-illini-accent/50 focus:bg-white/10 transition-all"
                                 />
                             </div>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div className="flex flex-col gap-2">
-                                    <label htmlFor="email" className="text-xs font-bold uppercase tracking-widest text-gray-500">Email</label>
+                                    <label htmlFor="email" className="text-xs font-bold uppercase tracking-widest text-white">Email</label>
                                     <input
                                         type="email"
                                         id="email"
@@ -126,11 +126,11 @@ ${formData.message}
                                         value={formData.email}
                                         onChange={handleChange}
                                         placeholder="lando@illinois.edu"
-                                        className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder:text-gray-600 focus:outline-none focus:border-illini-accent/50 focus:bg-white/10 transition-all"
+                                        className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder:text-white/80 focus:outline-none focus:border-illini-accent/50 focus:bg-white/10 transition-all"
                                     />
                                 </div>
                                 <div className="flex flex-col gap-2">
-                                    <label htmlFor="phone" className="text-xs font-bold uppercase tracking-widest text-gray-500">Phone (Optional)</label>
+                                    <label htmlFor="phone" className="text-xs font-bold uppercase tracking-widest text-white">Phone (Optional)</label>
                                     <input
                                         type="tel"
                                         id="phone"
@@ -138,12 +138,12 @@ ${formData.message}
                                         value={formData.phone}
                                         onChange={handleChange}
                                         placeholder="+1 (xxx) xxx-xxxx"
-                                        className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder:text-gray-600 focus:outline-none focus:border-illini-accent/50 focus:bg-white/10 transition-all"
+                                        className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder:text-white/80 focus:outline-none focus:border-illini-accent/50 focus:bg-white/10 transition-all"
                                     />
                                 </div>
                             </div>
                             <div className="flex flex-col gap-2">
-                                <label htmlFor="type" className="text-xs font-bold uppercase tracking-widest text-gray-500">Inquiry Type</label>
+                                <label htmlFor="type" className="text-xs font-bold uppercase tracking-widest text-white">Inquiry Type</label>
                                 <div className="relative">
                                     <select
                                         id="type"
@@ -156,11 +156,11 @@ ${formData.message}
                                         <option className="bg-illini-dark text-white" value="Sponsor">Sponsorship Opportunity</option>
                                         <option className="bg-illini-dark text-white" value="Join Us">Join The Team</option>
                                     </select>
-                                    <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400 text-xs">▼</div>
+                                    <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-white text-xs">▼</div>
                                 </div>
                             </div>
                             <div className="flex flex-col gap-2">
-                                <label htmlFor="message" className="text-xs font-bold uppercase tracking-widest text-gray-500">Message</label>
+                                <label htmlFor="message" className="text-xs font-bold uppercase tracking-widest text-white">Message</label>
                                 <textarea
                                     id="message"
                                     name="message"
@@ -169,7 +169,7 @@ ${formData.message}
                                     value={formData.message}
                                     onChange={handleChange}
                                     placeholder="How can we help you win?"
-                                    className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder:text-gray-600 focus:outline-none focus:border-illini-accent/50 focus:bg-white/10 transition-all resize-none"
+                                    className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder:text-white/80 focus:outline-none focus:border-illini-accent/50 focus:bg-white/10 transition-all resize-none"
                                 />
                             </div>
                             <button
