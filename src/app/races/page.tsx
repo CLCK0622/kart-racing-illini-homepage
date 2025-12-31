@@ -30,7 +30,7 @@ const pastRaces: RaceEvent[] = [
         date: "MAY 18, 2025",
         location: "Dawson, IL",
         rank: ["P1", "P3"],
-        image: "/races/250518MSKC.JPG",
+        image: "/races/250518MSKC.jpg",
         gapScale: 2
     },
     {
@@ -39,7 +39,7 @@ const pastRaces: RaceEvent[] = [
         date: "JUL 27, 2025",
         location: "Shanghai, CN",
         rank: "P31",
-        image: "/races/250727CRKC.JPG",
+        image: "/races/250727CRKC.jpg",
         gapScale: 1
     },
     {
@@ -48,7 +48,7 @@ const pastRaces: RaceEvent[] = [
         date: "AUG 24, 2025",
         location: "Yorktown, IN",
         rank: "P1",
-        image: "/races/250824SIRA.JPG",
+        image: "/races/250824SIRA.jpg",
         gapScale: 0.5
     },
     {
@@ -57,7 +57,7 @@ const pastRaces: RaceEvent[] = [
         date: "AUG 30, 2025",
         location: "New Castle, IN",
         rank: "DNS",
-        image: "/races/250830NCMP.JPG",
+        image: "/races/250830NCMP.jpg",
         gapScale: 0.5
     },
     {
@@ -66,7 +66,7 @@ const pastRaces: RaceEvent[] = [
         date: "SEP 07, 2025",
         location: "Dawson, IL",
         rank: "P2",
-        image: "/races/250907MSKC.JPG",
+        image: "/races/250907MSKC.jpg",
         gapScale: 0.5
     },
     {
@@ -75,7 +75,7 @@ const pastRaces: RaceEvent[] = [
         date: "SEP 14, 2025",
         location: "Dawson, IL",
         rank: "P1",
-        image: "/races/250914MSKC.JPG",
+        image: "/races/250914MSKC.jpg",
         gapScale: 1.5
     },
     {
