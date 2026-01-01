@@ -12,27 +12,6 @@ const stats = [
     {title: "Weekly Meet", subtitle: "TBD", id: 4, href: "/contact"},
 ];
 
-const cards = [
-    {
-        id: 1,
-        title: "The Iconic Yellow Helmet",
-        desc: "Simple yet unforgettable, the yellow, green, and blue helmet stood as a beacon of Senna's unmatched legacy on and off the track.",
-        img: "https://images.unsplash.com/photo-1757262981737-34d0413b6f2a?q=80&w=987&auto=format&fit=crop"
-    },
-    {
-        id: 2,
-        title: "Monaco 1984 Arrival of a Star",
-        desc: "Monaco 1984 marked Senna's arrival — a fearless rookie in the rain, charging through the field and proving a legend was born.",
-        img: "https://images.unsplash.com/photo-1683290843440-170cb27c3a66?q=80&w=1040&auto=format&fit=crop"
-    },
-    {
-        id: 3,
-        title: "The Yellow Lotus Era",
-        desc: "With the Camel-sponsored yellow Lotus, Senna's legend grew as he pushed the limits of speed, precision, and control.",
-        img: "https://images.unsplash.com/photo-1747805688489-c66c26751510?q=80&w=987&auto=format&fit=crop"
-    },
-];
-
 const cars = [
     {
         image: "/cars/KartRepublic+BriggsLo206(rank3).jpg",
