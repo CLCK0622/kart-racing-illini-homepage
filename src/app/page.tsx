@@ -116,7 +116,7 @@ export default function Home() {
                             Your browser does not support the video tag.
                         </video>
 
-                        <div className="absolute inset-0 bg-linear-to-t from-illini-dark via-transparent to-transparent"></div>
+                        <div className="absolute inset-0 bg-linear-to-t from-illini-dark via-transparent to-transparent hidden md:block"></div>
 
                     </div>
             </section>
