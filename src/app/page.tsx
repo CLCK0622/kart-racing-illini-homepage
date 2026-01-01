@@ -3,7 +3,7 @@ import Image from "next/image";
 import {FaArrowRight, FaBars, FaInstagram, FaDiscord} from "react-icons/fa";
 import ChromaGrid from "@/components/ChromaGrid";
 import CardSwap, {Card} from "@/components/CardSwap";
-import Link from "next/dist/client/link";
+import Link from "next/link";
 
 const stats = [
     {title: "Next Race", subtitle: "TBD", id: 1, href: "/races"},
@@ -152,15 +152,16 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="w-full px-6 md:px-12 pb-36 z-20 relative overflow-y-hidden">
-                <div className="relative h-150 mx-24 flex flex-row items-center">
-                    <div className="w-full flex-8 mx-auto text-center pr-120 text-2xl">
-                        <span className="font-bold text-5xl">Tracks</span> we have raced on:
+            <section className="w-full px-6 md:px-12 pb-120 md:pb-36 z-20 relative overflow-hidden">
+                <div className="relative flex flex-col lg:flex-row items-center gap-12 md:gap-0 md:h-150 md:mx-24">
+                    <div className="w-full lg:w-8/12 mx-auto text-center lg:pr-80 text-2xl md:text-3xl lg:text-5xl">
+                        <span className="font-bold text-4xl md:text-5xl lg:text-7xl block md:inline mb-2 md:mb-0">Tracks </span>
+                        we have raced on:
                     </div>
-                    <div className="flex-4 translate-y-64 -translate-x-60">
+                    <div className="w-full lg:w-4/12 flex justify-center lg:block translate-y-72 lg:translate-y-64 -translate-x-40 lg:-translate-x-40">
                         <CardSwap
                             cardDistance={60}
-                            verticalDistance={70}
+                            verticalDistance={50}
                             delay={4000}
                             pauseOnHover={false}
                         >

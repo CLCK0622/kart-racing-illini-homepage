@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 import { FaBars, FaChevronDown } from 'react-icons/fa';
 import GlassSurface from './GlassSurface';
-import Link from "next/dist/client/link";
+import Link from "next/link";
 
 const Navbar = () => {
     const pathname = usePathname();

@@ -196,7 +196,7 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
                 }
             >
               <div
-                  className="absolute inset-0 pointer-events-none transition-opacity duration-500 z-20 opacity-0 group-hover:opacity-100 mix-blend-soft-light"
+                  className="hidden md:block absolute inset-0 pointer-events-none transition-opacity duration-500 z-20 opacity-0 group-hover:opacity-100 mix-blend-soft-light"
                   style={{
                     background:
                         'radial-gradient(circle at var(--mouse-x) var(--mouse-y), var(--spotlight-color), transparent 60%)'
@@ -221,7 +221,7 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
         ))}
 
         <div
-            className="absolute inset-0 pointer-events-none z-30 rounded-[inherit]"
+            className="hidden md:block absolute inset-0 pointer-events-none z-30 rounded-[inherit]"
             style={{
               backdropFilter: 'grayscale(1)',
               WebkitBackdropFilter: 'grayscale(1)',
