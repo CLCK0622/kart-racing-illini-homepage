@@ -37,17 +37,18 @@ const Navbar = () => {
     return (
         <div className="fixed top-6 left-0 w-full flex md:justify-center justify-end z-50 px-4 pointer-events-none">
 
-            <div className="md:hidden pointer-events-auto relative">
+            <div className="md:hidden pointer-events-auto relative mx-auto w-full">
                 <GlassSurface
-                    width={120}
+                    width={320}
                     height={50}
                     borderRadius={25}
                     opacity={0.8}
                     backgroundOpacity={0.2}
-                    className="flex items-center justify-center gap-2"
+                    className="mx-auto flex items-center w-full"
                 >
-                    <span className="text-white font-bold text-sm tracking-widest uppercase">{pageTitle}</span>
-                    <FaChevronDown className="ml-2 text-xs text-illini-accent" />
+                    <Image src="/logo.png" width="64" height="64" alt="KRI Logo" className="ml-2 mr-auto" />
+                    <span className="text-white font-bold text-sm tracking-widest uppercase mr-0">{pageTitle}</span>
+                    <FaChevronDown className="ml-2 text-xs text-illini-accent mr-2" />
 
                     <select
                         value={pathname}
