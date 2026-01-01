@@ -5,6 +5,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import { FaBars, FaChevronDown } from 'react-icons/fa';
 import GlassSurface from './GlassSurface';
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
     const pathname = usePathname();
@@ -73,9 +74,11 @@ const Navbar = () => {
                     className="max-w-7xl mx-auto"
                     mixBlendMode="screen"
                 >
-                    <nav className="w-full flex justify-between items-center px-12 h-full">
+                    <nav className="w-full flex justify-between items-center pl-4 pr-12 h-full">
                         <div className="text-sm font-bold tracking-widest uppercase text-white drop-shadow-md">
-                            <Link href="/">Kart Racing Illini</Link>
+                            <Link href="/" className="flex items-center gap-4">
+                                <Image src="/logo.png" width="64" height="64" alt="KRI Logo" />Kart Racing Illini
+                            </Link>
                         </div>
 
                         <div className="flex gap-8 text-xs font-semibold tracking-widest text-gray-200">
