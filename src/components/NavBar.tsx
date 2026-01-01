@@ -12,10 +12,11 @@ const Navbar = () => {
     const [pageTitle, setPageTitle] = useState("HOME");
 
     const routes = [
-        { name: "HOME", path: "/" },
-        { name: "TEAM", path: "/team" },
-        { name: "RACES", path: "/races" },
-        { name: "CONTACT", path: "/contact" }
+        { name: "Home", path: "/" },
+        { name: "Team", path: "/team" },
+        { name: "Races", path: "/races" },
+        { name: "Join Us", path: "https://one.illinois.edu/KartRacingIllini/club_signup" },
+        { name: "Contact", path: "/contact" }
     ];
 
     useEffect(() => {
@@ -44,7 +45,7 @@ const Navbar = () => {
                     backgroundOpacity={0.2}
                     className="flex items-center justify-center gap-2"
                 >
-                    <span className="text-white font-bold text-sm tracking-widest">{pageTitle}</span>
+                    <span className="text-white font-bold text-sm tracking-widest uppercase">{pageTitle}</span>
                     <FaChevronDown className="ml-2 text-xs text-illini-accent" />
 
                     <select
