@@ -80,7 +80,8 @@ const Navbar = () => {
                         <div className="flex gap-8 text-xs font-semibold tracking-widest text-gray-200">
                             <Link href="/team" className="hover:text-illini-accent transition-colors drop-shadow-sm">TEAM</Link>
                             <Link href="/races" className="hover:text-illini-accent transition-colors drop-shadow-sm">RACES</Link>
-                            <Link href="/contact" className="hover:text-illini-accent transition-colors drop-shadow-sm">CONTACT US</Link>
+                            <Link href="https://one.illinois.edu/KartRacingIllini/club_signup" className="hover:text-illini-accent transition-colors drop-shadow-sm">JOIN US</Link>
+                            <Link href="/contact" className="hover:text-illini-accent transition-colors drop-shadow-sm">CONTACT</Link>
                         </div>
                     </nav>
                 </GlassSurface>
