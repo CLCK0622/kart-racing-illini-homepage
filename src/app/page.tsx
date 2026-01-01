@@ -20,7 +20,7 @@ const cars = [
         // handle: "Rank 3",
         borderColor: "#F97316", // KR Orange
         gradient: "linear-gradient(180deg, #F97316, #000)",
-        url: "#"
+        // url: "#"
     },
     {
         image: "/cars/KartRepublic+IAMEKa100(rank1).jpg",
@@ -29,7 +29,7 @@ const cars = [
         // handle: "Rank 1",
         borderColor: "#F97316", // KR Orange
         gradient: "linear-gradient(180deg, #F97316, #000)",
-        url: "#"
+        // url: "#"
     },
     {
         image: "/cars/Kosmic+BriggsLo206(rank4).JPG",
@@ -38,7 +38,7 @@ const cars = [
         // handle: "Rank 4",
         borderColor: "#8B5CF6", // Kosmic Purple/Blue
         gradient: "linear-gradient(180deg, #8B5CF6, #000)",
-        url: "#"
+        // url: "#"
     },
     {
         image: "/cars/TonyKart+BriggsLo206(rank5).JPG",
@@ -47,7 +47,7 @@ const cars = [
         // handle: "Rank 5",
         borderColor: "#15803D", // Tony Kart Green
         gradient: "linear-gradient(180deg, #15803D, #000)",
-        url: "#"
+        // url: "#"
     },
     {
         image: "/cars/DAP+ROKSV(rank6).JPG",
@@ -56,7 +56,7 @@ const cars = [
         // handle: "Rank 6",
         borderColor: "#DC2626", // Historic DAP Red
         gradient: "linear-gradient(180deg, #DC2626, #000)",
-        url: "#"
+        // url: "#"
     },
     {
         image: "/cars/TonyKart+RotaxDD2(rank7).jpg",
@@ -65,7 +65,7 @@ const cars = [
         // handle: "Rank 7",
         borderColor: "#15803D", // Tony Kart Green
         gradient: "linear-gradient(180deg, #15803D, #000)",
-        url: "#"
+        // url: "#"
     }
 ];
 
